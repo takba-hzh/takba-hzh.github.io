@@ -85,9 +85,17 @@ document.addEventListener('DOMContentLoaded', () => {
         switchTab(location.hash || '#home');
     });
 
+    function openBilibili(url) {
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = url.replace(/^https:\/\//, 'bilibili://');
+        document.body.appendChild(iframe);
+        window.open(url, '_blank');
+    }
+
     document.querySelectorAll('.btn-open').forEach(btn => {
         btn.addEventListener('click', () => {
-            window.open(btn.dataset.url, '_blank');
+            openBilibili(btn.dataset.url);
         });
     });
 
