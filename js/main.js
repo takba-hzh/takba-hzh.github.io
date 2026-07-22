@@ -85,6 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
         switchTab(location.hash || '#home');
     });
 
+    document.querySelectorAll('.btn-open').forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.open(btn.dataset.url, '_blank');
+        });
+    });
+
     document.getElementById('back-to-blog').addEventListener('click', e => {
         e.preventDefault();
         history.pushState(null, '', '#blog');

@@ -254,6 +254,23 @@ footer {
     padding-top: 24px;
 }
 
+/* Button */
+.btn-open {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .85rem;
+    transition: background .2s;
+}
+
+.btn-open:hover {
+    background: var(--primary-dark);
+}
+
 /* Contact */
 .contact-links {
     display: flex;
