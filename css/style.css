@@ -145,6 +145,15 @@ footer {
     margin: 0 auto;
 }
 
+/* Tabs */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 /* Cards */
 .grid {
     display: grid;

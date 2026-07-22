@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HZH - 个人主页</title>
+    <title>HZH</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,23 +11,76 @@
         <nav>
             <div class="logo">HZH</div>
             <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于</a></li>
-                <li><a href="portfolio.html">作品</a></li>
-                <li><a href="blog.html">博客</a></li>
-                <li><a href="contact.html">联系</a></li>
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">联系</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <img class="hero-avatar" src="https://avatars.githubusercontent.com/takba-hzh" alt="avatar">
-            <h1>HZH</h1>
-            <p>个人测试网站</p>
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <img class="hero-avatar" src="https://avatars.githubusercontent.com/takba-hzh" alt="avatar">
+                <h1>HZH</h1>
+                <p>个人测试网站</p>
+            </div>
         </section>
 
+        <section id="about" class="tab-content">
+            <h1 class="page-title">关于</h1>
+            <p class="page-subtitle">关于</p>
+            <p>测试页面</p>
+        </section>
 
+        <section id="portfolio" class="tab-content">
+            <h1 class="page-title">作品集</h1>
+            <p class="page-subtitle">项目与实践</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>3D 坦克模型</h3>
+                    <p>基于 Three.js 的 3D 模型交互展示。</p>
+                    <span class="tag">Three.js</span>
+                    <span class="tag">GLTF</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="tab-content">
+            <h1 class="page-title">博客</h1>
+            <p class="page-subtitle">记录与分享</p>
+            <p>暂无内容</p>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h1 class="page-title">联系我</h1>
+            <p class="page-subtitle">联系方式</p>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <div class="icon">&#9733;</div>
+                    <div>
+                        <div style="font-weight: 600;">GitHub</div>
+                        <a href="https://github.com/takba-hzh/" target="_blank">github.com/takba-hzh</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">B</div>
+                    <div>
+                        <div style="font-weight: 600;">B站</div>
+                        <a href="https://space.bilibili.com/628516563" target="_blank">space.bilibili.com/628516563</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">&#9993;</div>
+                    <div>
+                        <div style="font-weight: 600;">QQ</div>
+                        <span>1690462182</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
