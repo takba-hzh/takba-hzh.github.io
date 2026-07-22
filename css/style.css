@@ -222,6 +222,38 @@ footer {
     font-size: .9rem;
 }
 
+/* Blog post view */
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+.back-link:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+#post-date {
+    margin-bottom: 20px;
+}
+
+.post-content {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.post-content p {
+    margin-bottom: 16px;
+}
+
+.comments {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+}
+
 /* Contact */
 .contact-links {
     display: flex;

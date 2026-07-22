@@ -42,9 +42,18 @@
         </section>
 
         <section id="blog" class="tab-content">
-            <h1 class="page-title">博客</h1>
-            <p class="page-subtitle">记录与分享</p>
-            <p>暂无内容</p>
+            <div id="blog-list">
+                <h1 class="page-title">博客</h1>
+                <p class="page-subtitle">记录与分享</p>
+                <ul class="blog-list" id="post-list"></ul>
+            </div>
+            <div id="blog-post" style="display:none">
+                <a href="#" id="back-to-blog" class="back-link">&larr; 返回列表</a>
+                <h1 id="post-title" class="page-title"></h1>
+                <div class="date" id="post-date"></div>
+                <div id="post-content" class="post-content"></div>
+                <div id="comments" class="comments"></div>
+            </div>
         </section>
 
         <section id="contact" class="tab-content">
@@ -72,6 +81,13 @@
                         <span>1690462182</span>
                     </div>
                 </div>
+                <div class="contact-item">
+                    <div class="icon">T</div>
+                    <div>
+                        <div style="font-weight: 600;">百度贴吧</div>
+                        <a href="https://tieba.baidu.com/home/main?id=tb.1.d4df7e07.ziq88tj4RupBi53cJRqYKw" target="_blank">1199996740</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -80,6 +96,7 @@
         &copy; 2026 HZH. All rights reserved.
     </footer>
 
+    <script src="js/posts.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
