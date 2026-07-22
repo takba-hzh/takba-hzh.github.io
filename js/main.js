@@ -48,7 +48,7 @@ function showPost(id) {
     document.getElementById('blog-post').style.display = 'block';
     document.getElementById('post-title').textContent = post.title;
     document.getElementById('post-date').textContent = post.date;
-    document.getElementById('post-content').innerHTML = post.content;
+    document.getElementById('post-content').innerHTML = marked.parse(post.content);
 
     loadComments(id);
 }
